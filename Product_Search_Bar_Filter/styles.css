@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #141414;
+}
+
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+}
+
+#search-container {
+    margin: 1em 0;
+}
+
+#search-container input{
+    background: #2b2b2b;
+    color: #cccccc;
+    width: 40%;
+    padding: 1em 0.3em;
+    padding-left: 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    box-shadow: 0 2px 2px #050505;
+}
+
+#search-input::-webkit-search-cancel-button {
+    appearance: none;
+}
+
+#search-container button {
+    padding: 1em 2em;
+    margin-left: 1em;
+    background: #454938;
+    color: #e2e2e2;
+    border-radius: 25px;
+    margin-top: 0.5em;
+    cursor: pointer;
+    box-shadow: 0 2px 2px #050505;
+}
+
+#search-container button:hover {
+    background: #2b2b2b;
+    transition: all 0.4s;
+}
+
+.button-value {
+    border: 2px solid #333333;
+    padding: 1em 2.2em;
+    border-radius: 25px;
+    background: transparent;
+    color: #cccccc;
+    cursor: pointer;
+    box-shadow: 0 2px 2px #050505;
+}
+
+.button-value:hover {
+    background: #333333;
+    transition: all 0.4s;
+}
+
+#products {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1.5em;
+    padding: 2em 0;
+}
+
+.card {
+    background: #252525;
+    max-width: 18em;
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px #050505;
+}
+
+.image-container {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    width: 400px;
+    object-fit: contain;
+    height: 15em;
+}
+
+.container {
+    padding-top: 1em;
+}
+
+.container h5 {
+    font-weight: 500;
+    color: #979797;
+    font-size: 15px;
+}
+
+.container h4 {
+    padding-top: 10px;
+    font-weight: 400;
+    color: #cfcfcf;
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 720px) {
+    img {
+        max-width: 100%;
+        object-fit: contain;
+        height: 10em;
+    }
+
+    .card {
+        max-width: 10em;
+        margin-top: 1em;
+    }
+
+    #products {
+        grid-template-columns: auto auto;
+        gap: 1em;
+    }
+
+    .price {
+        font-size: 15px;
+    }
+}

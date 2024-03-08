@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Search Bar Filter</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <div class="wrapper">
+        <div id="search-container">
+            <input type="search" id="search-input" placeholder="Search product name here">
+            <button id="search">Search</button>
+        </div>
+        <div id="buttons">
+            <button class="button-value" onclick="filterProduct('All')">All</button>
+            <button class="button-value" onclick="filterProduct('Tops')">Tops</button>
+            <button class="button-value" onclick="filterProduct('Bottoms')">Bottoms</button>
+            <button class="button-value" onclick="filterProduct('Jackets')">Jackets</button>
+            <button class="button-value" onclick="filterProduct('Accessories')">Accessories</button>
+        </div>
+        <div id="products"></div>
+      </div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Music Player</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+     <!-- Fontawesome -->
+     <script src="https://kit.fontawesome.com/dae996b2f2.js" crossorigin="anonymous"></script>
+
+    <body>
+       <div class="container">
+            <div class="music-player">
+                <nav>
+                    <div class="circle">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div class="circle">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </nav>
+
+                <img id="songImg" class="song-img">
+                <h1 id="songTitle">Song Title</h1>
+                <p id="songArtist">Song Artist</p>
+
+                <div id="timeRemaining"></div>
+
+                <div>
+                    <audio id="song1">
+                        <source src="media/1_Riverside.mp3" type="audio/mpeg">
+                    </audio>
+                    <audio id="song2">
+                        <source src="media/4_Midas.mp3" type="audio/mpeg">
+                    </audio>
+                    <audio id="song3">
+                        <source src="media/9_Speeder.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+
+                <input type="range" value="0" id="progress">
+
+                <div class="controls">
+                    <div onclick="backward()"><i class="fa-solid fa-backward"></i></div>
+                    <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                    <div onclick="forward()"><i class="fa-solid fa-forward"></i></div>
+                </div>
+
+            </div>
+       </div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
